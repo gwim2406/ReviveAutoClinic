@@ -1,0 +1,97 @@
+<div class="garage-website">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="overlay"></div>
+
+    <img
+      src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop"
+      alt="Garage Hero"
+      class="hero-image"
+    />
+
+    <div class="hero-content">
+      <p class="hero-tag">PREMIUM AUTO GARAGE</p>
+
+      <h1>
+        PERFORMANCE.<br />
+        PRECISION.<br />
+        PERFECTION.
+      </h1>
+
+      <p class="hero-description">
+        High-end vehicle repair, tuning, detailing, and performance upgrades
+        with modern technology and expert craftsmanship.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn">Book Service</button>
+        <button class="secondary-btn">Explore Services</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section">
+    <div class="section-header">
+      <p>WHAT WE DO</p>
+      <h2>Premium Garage Services</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services">
+        <div class="icon-box">
+          <div class="icon-dot"></div>
+        </div>
+
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="showcase-section">
+    <div class="showcase-header">
+      <div>
+        <p>FEATURED BUILDS</p>
+        <h2>Built for Car Enthusiasts</h2>
+      </div>
+
+      <span>
+        From performance tuning to luxury detailing, we transform ordinary
+        vehicles into stunning machines.
+      </span>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card" *ngFor="let image of galleryImages">
+        <img [src]="image" alt="Garage Showcase" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item" *ngFor="let stat of stats">
+        <h3>{{ stat.value }}</h3>
+        <p>{{ stat.label }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <p>READY TO UPGRADE?</p>
+
+    <h2>Let’s Build Your Dream Car Experience</h2>
+
+    <span>
+      Schedule your appointment today and experience premium automotive care
+      with modern technology and passionate craftsmanship.
+    </span>
+
+    <button class="primary-btn large-btn">Contact Garage</button>
+  </section>
+  <app-footer></app-footer>
+</div>
