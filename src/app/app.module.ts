@@ -3,24 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
 // import { bootstrapApplication } from '@angular/platform-browser';
 
 // bootstrapApplication(AppComponent).catch((err) => console.error(err));
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
