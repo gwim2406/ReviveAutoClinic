@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "reviveautoclinic",
+  "compatibility_date": "2026-06-02",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "dist/revive-auto-clinic"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
