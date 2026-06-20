@@ -13,19 +13,19 @@ export class HomeComponent {
 
   services = [
     {
-      title: 'Engine Diagnostics',
+      title: 'Vehicle Health & Diagnostics',
       description:
-        'Advanced diagnostics and precision engine repair using modern automotive systems.',
+        `<ul><li>Vehicle Health Inspection.</li><li>Advanced Diagnostics.</li><li>ECU Scanning.</li><li>Preventive Maintenance.</li><li>Electrical Diagnostics.</li></ul>`,
     },
     {
-      title: 'Car Detailing',
+      title: 'Mechanical Services',
       description:
-        'Luxury interior and exterior detailing to restore showroom-quality appearance.',
+        `<ul><li>Engine Repairs.</li><li>Suspension Repairs.</li><li>Steering Systems.</li><li>Brake Systems.</li><li>AC Systems.</li></ul>`,
     },
     {
-      title: 'Performance Tuning',
+      title: 'Body & Appearance Care',
       description:
-        'Turbo upgrades, ECU tuning, suspension tuning, and custom modifications.',
+        `<ul><li>Accident Repairs.</li><li>Tinkering & Panel Work.</li><li>Vehicle Painting.</li><li>Detailing.</li><li>Paint Restoration.</li></ul>`,
     },
   ];
 

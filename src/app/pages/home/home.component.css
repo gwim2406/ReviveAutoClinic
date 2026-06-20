@@ -77,12 +77,16 @@
 
       .primary-btn,
       .secondary-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         padding: 16px 32px;
         border-radius: 16px;
         border: none;
         cursor: pointer;
         font-size: 16px;
         transition: 0.3s ease;
+        text-decoration: none;
       }
 
       .primary-btn {
@@ -240,6 +244,14 @@
         background: #111;
       }
 
+      .cta-buttons {
+        display: inline-flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
       .cta-section h2 {
         max-width: 850px;
         margin: auto;
@@ -254,7 +266,7 @@
       }
 
       .large-btn {
-        margin-top: 40px;
+        margin-top: 0;
       }
 
       @media (max-width: 768px) {
@@ -278,4 +290,7 @@
         .cta-section h2 {
           font-size: 36px;
         }
+        
       }
+
+      .spacer { height: 25px; }

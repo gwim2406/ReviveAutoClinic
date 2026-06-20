@@ -13,18 +13,18 @@
       <p class="hero-tag">PREMIUM AUTO GARAGE</p>
 
       <h1>
-        PERFORMANCE.<br />
-        PRECISION.<br />
-        PERFECTION.
+        WE REVIVE,<br />
+        YOU DRIVE<br />
+        WITH CONFIDENCE.
       </h1>
 
       <p class="hero-description">
-        High-end vehicle repair, tuning, detailing, and performance upgrades
-        with modern technology and expert craftsmanship.
+        Professional Vehicle Diagnostics, Health Inspections & Preventive
+        Maintenance.
       </p>
 
       <div class="hero-buttons">
-        <button class="primary-btn">Book Service</button>
+        <button class="primary-btn">Why RAC?</button>
         <button class="secondary-btn">Explore Services</button>
       </div>
     </div>
@@ -33,8 +33,8 @@
   <!-- Services -->
   <section class="services-section">
     <div class="section-header">
-      <p>WHAT WE DO</p>
-      <h2>Premium Garage Services</h2>
+      <!-- <p>WHAT WE DO</p> -->
+      <h2>Our Core Services</h2>
     </div>
 
     <div class="services-grid">
@@ -44,7 +44,10 @@
         </div>
 
         <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
+        <div
+          class="service-description"
+          [innerHTML]="service.description"
+        ></div>
       </div>
     </div>
   </section>
@@ -82,16 +85,35 @@
 
   <!-- CTA -->
   <section class="cta-section">
-    <p>READY TO UPGRADE?</p>
+    <!-- <p>READY TO UPGRADE?</p> -->
 
-    <h2>Let’s Build Your Dream Car Experience</h2>
+    <h2>Let's Keep Your Vehicle at Its Best</h2>
 
     <span>
-      Schedule your appointment today and experience premium automotive care
-      with modern technology and passionate craftsmanship.
+      From advanced diagnostics and preventive maintenance to accident repairs
+      and complete restorations, Revive Auto Clinic is committed to helping you
+      protect your investment and enjoy peace of mind on every journey.
+      <div class="spacer"></div>
+      <br />Ready to get started? <br />Contact our team today and discover the
+      RAC difference.
     </span>
 
-    <button class="primary-btn large-btn">Contact Garage</button>
+    <div class="cta-buttons">
+      <a class="primary-btn large-btn" href="tel:+94769165516">Call Us</a>
+      <a
+        class="primary-btn large-btn"
+        href="https://wa.me/+94769165516?text=Hello%20Revive%20Auto%20Clinic"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+      <a
+        class="primary-btn large-btn"
+        href="mailto:contact@reviveautoclinic.com"
+        >Email</a
+      >
+    </div>
   </section>
   <!-- <app-footer></app-footer> -->
 </div>
