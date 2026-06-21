@@ -58,6 +58,7 @@
         font-weight: 600;
         letter-spacing: 0.04em;
         position: relative;
+        cursor: pointer;
         transition: color 180ms ease, transform 180ms ease;
       }
 

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../layout/footer/footer.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ import { FooterComponent } from '../../layout/footer/footer.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  private router = inject(Router);
 
   services = [
     {
@@ -42,4 +44,8 @@ export class HomeComponent {
     { value: '24/7', label: 'Support' },
   ];
 
+  scrollToSection(sectionId: string): void {
+    // Navigate with fragment - router will automatically scroll to the element
+    this.router.navigate([], { fragment: sectionId });
+  }
 }

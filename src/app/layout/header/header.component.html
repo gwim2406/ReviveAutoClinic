@@ -11,19 +11,19 @@
   </button>
 
   <nav *ngIf="!isMobile" [class.active]="menuOpen">
-    <a href="#" (click)="closeMenu()">Home</a>
-    <a href="#serviceSection" (click)="closeMenu()">Services</a>
+    <a (click)="scrollToSection('home'); $event.preventDefault()" href="#">Home</a>
+    <a (click)="scrollToSection('serviceSection'); $event.preventDefault()" href="#">Services</a>
     <!-- <a href="#">Projects</a> -->
-    <a href="#" (click)="closeMenu()">About</a>
-    <a href="#" (click)="closeMenu()">Contact</a>
+    <a (click)="scrollToSection('about'); $event.preventDefault()" href="#">About</a>
+    <a (click)="scrollToSection('contact'); $event.preventDefault()" href="#">Contact</a>
   </nav>
 
   <nav *ngIf="menuOpen" [class.active]="menuOpen">
-    <a href="#" (click)="closeMenu()">Home</a>
-    <a href="#serviceSection" (click)="closeMenu()">Services</a>
+    <a (click)="scrollToSection('home'); $event.preventDefault()" href="#">Home</a>
+    <a (click)="scrollToSection('serviceSection'); $event.preventDefault()" href="#">Services</a>
     <!-- <a href="#">Projects</a> -->
-    <a href="#" (click)="closeMenu()">About</a>
-    <a href="#" (click)="closeMenu()">Contact</a>
+    <a (click)="scrollToSection('about'); $event.preventDefault()" href="#">About</a>
+    <a (click)="scrollToSection('contact'); $event.preventDefault()" href="#">Contact</a>
   </nav>
 
   <!-- <button>Book Now</button> -->

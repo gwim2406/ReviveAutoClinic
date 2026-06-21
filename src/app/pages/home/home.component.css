@@ -298,18 +298,78 @@
 
         .hero-content h1 {
           font-size: 48px;
+          line-height: 1.2;
+        }
+
+        .hero-description {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+
+        .hero-buttons {
+          gap: 12px;
+          margin-top: 25px;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+          padding: 14px 24px;
+          font-size: 14px;
         }
 
         .services-section,
         .showcase-section,
         .cta-section,
         .stats-section {
-          padding: 70px 25px;
+          padding: 60px 20px;
         }
 
         .section-header h2,
         .showcase-header h2,
         .cta-section h2 {
+          font-size: 32px;
+        }
+
+        .service-card {
+          padding: 25px;
+          border-radius: 20px;
+        }
+
+        .service-card h3 {
+          font-size: 22px;
+          margin-bottom: 12px;
+        }
+
+        .cta-section .row {
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .cta-section .row .service-card {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .gallery-card img {
+          height: 300px;
+        }
+
+        .showcase-header {
+          gap: 20px;
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .showcase-header span {
+          max-width: 100%;
+        }
+
+        .stats-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+
+        .stat-item h3 {
           font-size: 36px;
         }
 
@@ -326,4 +386,137 @@
         
       }
 
-      .spacer { height: 25px; }
+      @media (max-width: 480px) {
+        .hero-section {
+          height: 70vh;
+        }
+
+        .hero-content {
+          padding: 20px;
+          justify-content: flex-start;
+          padding-top: 100px;
+        }
+
+        .hero-content h1 {
+          font-size: 32px;
+          line-height: 1.1;
+          margin-bottom: 15px;
+        }
+
+        .hero-tag {
+          font-size: 10px;
+          letter-spacing: 3px;
+          margin-bottom: 10px;
+        }
+
+        .hero-description {
+          font-size: 14px;
+          margin-top: 15px;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+          width: 100%;
+          padding: 12px 16px;
+          font-size: 13px;
+        }
+
+        .services-section,
+        .showcase-section,
+        .cta-section,
+        .stats-section {
+          padding: 40px 15px;
+        }
+
+        .section-header h2,
+        .showcase-header h2,
+        .cta-section h2 {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
+
+        .section-header,
+        .showcase-header {
+          margin-bottom: 30px;
+        }
+
+        .services-grid {
+          gap: 20px;
+        }
+
+        .service-card {
+          padding: 20px;
+          border-radius: 16px;
+        }
+
+        .service-card h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        .service-card p,
+        .service-description {
+          font-size: 13px;
+        }
+
+        .icon-box {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 16px;
+        }
+
+        .icon-dot {
+          width: 18px;
+          height: 18px;
+        }
+
+        .gallery-grid {
+          gap: 15px;
+        }
+
+        .gallery-card img {
+          height: 250px;
+        }
+
+        .cta-section span {
+          font-size: 14px;
+          margin: 15px auto 0;
+        }
+
+        .cta-section span ul li {
+          margin-bottom: 8px;
+          font-size: 13px;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+
+        .stat-item h3 {
+          font-size: 28px;
+          margin-bottom: 8px;
+        }
+
+        .stat-item p {
+          font-size: 12px;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 25px;
+        }
+
+        .large-btn {
+          width: 100%;
+          padding: 12px 16px;
+          font-size: 13px;
+        }
+      }

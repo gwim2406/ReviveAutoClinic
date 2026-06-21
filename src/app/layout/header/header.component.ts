@@ -1,5 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -25,5 +26,16 @@ export class HeaderComponent {
 
   closeMenu() {
     this.menuOpen = false;
+  }
+
+  private router = inject(Router);
+
+  scrollToSection(sectionId: string): void {
+    // Close mobile menu if open
+    if (this.menuOpen) {
+      this.closeMenu();
+    }
+    // Navigate with fragment - router will automatically scroll to the element
+    this.router.navigate([], { fragment: sectionId });
   }
 }
