@@ -27,19 +27,15 @@ export class HeaderComponent {
   closeMenu() {
     this.menuOpen = false;
   }
-  
+
   private router = inject(Router);
 
   scrollToSection(sectionId: string): void {
-    // Navigate with fragment
+    // Close mobile menu if open
+    if (this.menuOpen) {
+      this.closeMenu();
+    }
+    // Navigate with fragment - router will automatically scroll to the element
     this.router.navigate([], { fragment: sectionId });
-    
-    // Scroll to element after a short delay to ensure navigation completes
-    setTimeout(() => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
   }
 }

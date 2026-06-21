@@ -45,15 +45,7 @@ export class HomeComponent {
   ];
 
   scrollToSection(sectionId: string): void {
-    // Navigate with fragment
+    // Navigate with fragment - router will automatically scroll to the element
     this.router.navigate([], { fragment: sectionId });
-    
-    // Scroll to element after a short delay to ensure navigation completes
-    setTimeout(() => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
   }
 }
