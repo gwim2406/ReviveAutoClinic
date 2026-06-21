@@ -312,6 +312,17 @@
         .cta-section h2 {
           font-size: 36px;
         }
+
+        .cta-section .row {
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 20px;
+        }
+
+        .cta-section .row .service-card {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
         
       }
 

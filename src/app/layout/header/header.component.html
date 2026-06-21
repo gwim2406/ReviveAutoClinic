@@ -4,12 +4,26 @@
     <span class="logo-text">Revive Auto Clinic</span>
   </div>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
+  <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav *ngIf="!isMobile" [class.active]="menuOpen">
+    <a href="#" (click)="closeMenu()">Home</a>
+    <a href="#serviceSection" (click)="closeMenu()">Services</a>
     <!-- <a href="#">Projects</a> -->
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#" (click)="closeMenu()">About</a>
+    <a href="#" (click)="closeMenu()">Contact</a>
+  </nav>
+
+  <nav *ngIf="menuOpen" [class.active]="menuOpen">
+    <a href="#" (click)="closeMenu()">Home</a>
+    <a href="#serviceSection" (click)="closeMenu()">Services</a>
+    <!-- <a href="#">Projects</a> -->
+    <a href="#" (click)="closeMenu()">About</a>
+    <a href="#" (click)="closeMenu()">Contact</a>
   </nav>
 
   <!-- <button>Book Now</button> -->

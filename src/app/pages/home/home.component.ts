@@ -36,8 +36,8 @@ export class HomeComponent {
   ];
 
   stats = [
-    { value: '12+', label: 'Years Experience' },
-    { value: '8K+', label: 'Vehicles Serviced' },
+    { value: '6+', label: 'Years Experience' },
+    { value: '2K+', label: 'Vehicles Serviced' },
     { value: '99%', label: 'Customer Satisfaction' },
     { value: '24/7', label: 'Support' },
   ];
