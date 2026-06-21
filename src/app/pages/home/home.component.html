@@ -1,4 +1,4 @@
-<div class="garage-website">
+<div class="garage-website" id="home">
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="overlay"></div>
@@ -24,8 +24,8 @@
       </p>
 
       <div class="hero-buttons">
-        <button class="primary-btn">Why RAC?</button>
-        <button class="secondary-btn">Explore Services</button>
+        <button class="primary-btn" (click)="scrollToSection('why-rac')" style="cursor: pointer;">Why RAC?</button>
+        <button class="secondary-btn" (click)="scrollToSection('services')" style="cursor: pointer;">Explore Services</button>
       </div>
     </div>
   </section>
@@ -82,7 +82,7 @@
   </section>
 
   <!-- Showcase -->
-  <section class="cta-section">
+  <section class="cta-section"  id="why-rac">
     <p>WHY you choose RAC?</p>
 
     <h2>
@@ -109,7 +109,7 @@
       </ul>
     </span>
   </section>
-  <section class="showcase-section">
+  <section class="showcase-section" id="about">
     <div class="showcase-header">
       <div>
         <p>Dedicated Inspection Report</p>

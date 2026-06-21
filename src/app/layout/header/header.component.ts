@@ -1,5 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -25,5 +26,20 @@ export class HeaderComponent {
 
   closeMenu() {
     this.menuOpen = false;
+  }
+  
+  private router = inject(Router);
+
+  scrollToSection(sectionId: string): void {
+    // Navigate with fragment
+    this.router.navigate([], { fragment: sectionId });
+    
+    // Scroll to element after a short delay to ensure navigation completes
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   }
 }

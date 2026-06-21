@@ -1,17 +1,17 @@
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="footer-inner">
-    <div class="row">
-      <div class="col-md-4 footer-links">
+    <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <div class="col-md-4 footer-links" style="flex: 1; min-width: 200px;">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a (click)="scrollToSection('home')" style="cursor: pointer;">Home</a></li>
+          <li><a (click)="scrollToSection('services')" style="cursor: pointer;">Services</a></li>
+          <li><a (click)="scrollToSection('about')" style="cursor: pointer;">About Us</a></li>
+          <li><a (click)="scrollToSection('contact')" style="cursor: pointer;">Contact</a></li>
         </ul>
       </div>
 
-      <div class="col-md-4 footer-social text-center">
+      <div class="col-md-4 footer-social text-center" style="flex: 1; min-width: 200px;">
         <h4>Follow Us</h4>
         <div class="social-icons d-flex justify-content-center">
           <a
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 footer-links text-end">
+      <div class="col-md-4 footer-links text-end" style="flex: 1; min-width: 200px;">
         <h4>Contact Us</h4>
         <ul>
           <li>No 280/1, Maligapurana, Gampola</li>
