@@ -9,35 +9,48 @@
       class="hero-image"
     />
 
-    <div class="hero-content">
-      <p class="hero-tag">PREMIUM AUTO GARAGE</p>
+    <div class="hero-body">
+      <div class="hero-content">
+        <p class="hero-tag">PREMIUM AUTO GARAGE</p>
 
-      <h1>
-        WE REVIVE,<br />
-        YOU DRIVE<br />
-        WITH CONFIDENCE.
-      </h1>
+        <h1>
+          WE REVIVE,<br />
+          YOU DRIVE<br />
+          WITH CONFIDENCE.
+        </h1>
 
-      <p class="hero-description">
-        Professional Vehicle Diagnostics, Health Inspections & Preventive
-        Maintenance.
-      </p>
+        <p class="hero-description">
+          Professional Vehicle Diagnostics, Health Inspections & Preventive
+          Maintenance.
+        </p>
 
-      <div class="hero-buttons">
-        <button
-          class="primary-btn"
-          (click)="scrollToSection('why-rac')"
-          style="cursor: pointer"
+        <div class="hero-buttons">
+          <button
+            class="primary-btn"
+            (click)="scrollToSection('why-rac')"
+            style="cursor: pointer"
+          >
+            Why RAC?
+          </button>
+          <button
+            class="secondary-btn"
+            (click)="scrollToSection('serviceSection')"
+            style="cursor: pointer"
+          >
+            Explore Services
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-side-image">
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open Google"
         >
-          Why RAC?
-        </button>
-        <button
-          class="secondary-btn"
-          (click)="scrollToSection('serviceSection')"
-          style="cursor: pointer"
-        >
-          Explore Services
-        </button>
+          <img src="assets/reg_temp_4.png" alt="Register temp" />
+        </a>
       </div>
     </div>
   </section>
