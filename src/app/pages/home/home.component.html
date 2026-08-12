@@ -93,6 +93,28 @@
     </div>
   </section>
 
+    <!-- Inspections -->
+  <section class="services-section" id="inspectionSection">
+    <div class="section-header">
+      <!-- <p>WHAT WE DO</p> -->
+      <h2>RAC Standard Inspection</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of inspections">
+        <div class="icon-box">
+          <div class="icon-dot"></div>
+        </div>
+
+        <h3>{{ service.title }}</h3>
+        <div
+          class="service-description"
+          [innerHTML]="service.description"
+        ></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Showcase -->
   <section class="cta-section" id="why-rac">
     <p>WHY you choose RAC?</p>

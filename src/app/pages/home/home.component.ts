@@ -31,6 +31,24 @@ export class HomeComponent {
     },
   ];
 
+  inspections = [
+    {
+      title: 'Essential Vehicle Health Check',
+      description:
+        `<ul><li>Visual & basic mechanical inspection</li><li>Engine, brakes & suspension check</li><li>Basic diagnostic scan</li><li>Fluid, leakage & tyre check</li><li>Road test & health summary</li><li>RAC Advanced Inspection</li></ul>`,
+    },
+    {
+      title: 'Detailed Mechanical & Diagnostic Check',
+      description:
+        `<ul><li>Comprehensive diagnostic scan</li><li>Engine & transmission assessment</li><li>Brakes, suspension & steering</li><li>Electrical & AC system check</li><li>Detailed road test & report</li><li>RAC Premium Inspection</li></ul>`, 
+    },
+    {
+      title: 'Complete Vehicle Health Assessment',
+      description:
+        `<ul><li>Full diagnostic & electronic assessment</li><li>Complete mechanical & drivetrain check</li><li>Electrical, AC & safety systems</li><li>Body, structure, tyres & underbody</li><li>Comprehensive inspection report</li></ul>`,
+    },
+  ]
+
   galleryImages = [
     'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1200&auto=format&fit=crop',
