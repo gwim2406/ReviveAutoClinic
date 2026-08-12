@@ -106,6 +106,28 @@
     </div>
   </section>
 
+    <!-- Inspections -->
+  <section class="services-section" id="inspectionSection">
+    <div class="section-header">
+      <!-- <p>WHAT WE DO</p> -->
+      <h2>RAC Standard Inspection</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of inspections">
+        <div class="icon-box">
+          <div class="icon-dot"></div>
+        </div>
+
+        <h3>{{ service.title }}</h3>
+        <div
+          class="service-description"
+          [innerHTML]="service.description"
+        ></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Showcase -->
   <section class="cta-section" id="why-rac">
     <p>WHY you choose RAC?</p>
@@ -184,16 +206,16 @@
     </span>
 
     <div class="cta-buttons">
-      <a class="primary-btn large-btn" href="tel:+94769165516">Call Us</a>
+      <a class="primary-btn large-btn" href="tel:+94789165516">Call Us</a>
       <a
         class="primary-btn large-btn"
-        href="https://wa.me/+94769165516?text=Hello%20Revive%20Auto%20Clinic"
+        href="https://wa.me/+94789165516?text=Hello%20Revive%20Auto%20Clinic"
         target="_blank"
         rel="noopener noreferrer"
       >
         WhatsApp
       </a>
-      <a class="primary-btn large-btn" href="mailto:info@reviveautoclinic.com"
+      <a class="primary-btn large-btn" href="mailto:info@reviveautoclinic.lk"
         >Email</a
       >
     </div>
